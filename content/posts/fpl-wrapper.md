@@ -1,6 +1,6 @@
 ---
 title: "An API for Fantasy Premier League: FPLWrapper"
-date: 2021-01-02T19:44:06Z
+date: 2021-01-14T19:44:06Z
 draft: false
 tags: ["fpl", "api", "java"]
 ---
@@ -14,7 +14,7 @@ If you'd like to dive right in then have a look at the Swagger documentation: ht
 
 The player endpoint allows you to get statistics of a player by name. This includes all the statistics available on the FPL website for this season and summary statistics for previous seasons played in the Premier League.
 
-The simplest thing you can do is compare the statistics of two different players. As a Chelsea fan, I'm particularly interested in how Reece James stacks up against one of the best right-backs in the Premier League right now, Trent Alexander-Arnold. To do this I'm going to use the statistics that go into creating a player's ICT index: Influence, Creativity and Threat - see here for more information: https://www.premierleague.com/news/65567.
+The simplest thing you can do is compare the statistics of two different players. As a Chelsea fan, I'm particularly interested in how Reece James stacks up against one of the best right-backs in the Premier League right now, Trent Alexander-Arnold. To do this I'm going to use the statistics that go into creating a player's ICT index: Influence, Creativity and Threat - see this link for more information: https://www.premierleague.com/news/65567.
 
 In the following code snippet, I'm using the [Requests](https://requests.readthedocs.io/en/master/) library to hit the player endpoint once for each player. I'm sending a `GET` request with the player's name as a `name` query parameter.  I calculate this season's averages for those stats and then I plot this in a radar chart using [Matplotlib](https://matplotlib.org/).
 
@@ -43,7 +43,7 @@ ax.legend(loc=(0.7, 1), fontsize="x-small")
 plt.show()
 ```
 
-![Reece James vs Trent Alexander-Arnold ICT](/fpl-wrapper-radar.png#c)
+![Reece James vs Trent Alexander-Arnold ICT](/post-fpl-wrapper-radar.png#c)
 
 We can see that this season James has been seriously competing with Trent. Those that don't have the cash to bring in Trent should really consider Reece James who is more than £2m cheaper at £5.2m.
 
@@ -83,7 +83,7 @@ plt.gcf().subplots_adjust(bottom=0.32)
 plt.show()
 ```
 
-![My team's PPGPV](/fpl-wrapper-bar.png#c)
+![My team's PPGPV](/post-fpl-wrapper-bar.png#c)
 
 It's clear from the PPGPV stats that McCarthy at £4.7m has been quite a bargain. Reece James ranks high at fourth best amongst my team and would definitely be an improvement over some of my defenders such as George Baldock who is in the same price band at £5m.
 
