@@ -4,5 +4,23 @@
 .content h4,
 .content h5,
 .content h6 {
-    color: #0080FF;
+    color: black;
 }
+
+.content h1:not(:first-child),
+.content h2:not(:first-child),
+.content h3:not(:first-child),
+.content h4:not(:first-child),
+.content h5:not(:first-child),
+.content h6:not(:first-child) {
+  margin-top: 30px;
+}
+
+.nav,
+.nav>.container {
+  min-height: 0;
+}
+
+.section {
+    padding-bottom: 5px;
+  }

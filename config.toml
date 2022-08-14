@@ -2,11 +2,11 @@ baseurl = "http://www.kelanyll.com"
 languageCode = "en"
 title = "Yll Kelani"
 theme = "kiss"
-copyright = "&copy; <a href=\"https://github.com/kelanyll\">Yll Kelani</a> 2020"
-disqusShortname = ""
+copyright = "&copy; <a href=\"https://github.com/kelanyll\">Yll Kelani</a>"
+disqusShortname = "kelanyll-com"
 googleAnalytics = ""
 Paginate = 5 # Number of posts per page
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 [params.rss] # Adding this tag enables RSS feed
 includeContent = true # Includes whole content in rss
