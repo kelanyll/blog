@@ -1,10 +1,9 @@
 ---
 title: "Building a screenshot emailer service"
 date: 2022-08-08T22:49:26+01:00
-draft: true
 tags: ["system-design", "aws"]
 ---
-Setting up alerts on job listing pages is a useful feature but not all sites provide this functionality. This has previously led me to search for a service that can email you screenshots of a website at a scheduled interval. I have had trouble finding one for free and this got me thinking about how a service like this would work both on a single machine and scaled out into a distributed system.
+It can be hard to find job vacancies online that haven't already been filled. Whilst some job listing sites let you register to receive alerts when new roles are posted, not all sites provide this feature. This led me to search for a service that can email you screenshots of a website at a scheduled interval. I had trouble finding one for free and this got me thinking about how a service like this would work both on a single machine and scaled out into a distributed system. 
 
 ## Single machine
 The idea would be that we store a config of "tasks" where one task represents screenshotting a website and emailing it at a specific interval. These are the abstract components that I see representing a system that can run this service at a smaller scale:
