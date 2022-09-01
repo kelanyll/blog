@@ -8,7 +8,7 @@ Some of us who play Fantasy Premier League (FPL) often rely on data analytics to
 
 FPLWrapper started off as a toy project to learn the Dropwizard server framework. It makes use of PostgreSQL, a relational database, to persist data. It uses Java concurrency to take advantage of multi-thread parallelism when writing to the database. The Java server and database are containerised using Docker and deployed via AWS on an EC2 instance (thanks Free Tier!). See the GitHub repo for more information: https://github.com/kelanyll/FPLWrapper.
 
-If you'd like to dive right in then have a look at the Swagger documentation: http://kelanyll.com/fpl-wrapper/swagger. I'm going to go through the current endpoints available and give examples of what you can do with them using Python 3, one of the most popular programming languages for data analysts. The examples are in the GitHub repo if you'd like to jump straight into the code: https://github.com/kelanyll/FPLWrapper/tree/master/examples.
+If you'd like to dive right in then have a look at the Swagger documentation: https://kelanyll.com/fpl-wrapper/swagger. I'm going to go through the current endpoints available and give examples of what you can do with them using Python 3, one of the most popular programming languages for data analysts. The examples are in the GitHub repo if you'd like to jump straight into the code: https://github.com/kelanyll/FPLWrapper/tree/master/examples.
 
 ## /player
 
@@ -87,4 +87,4 @@ plt.show()
 
 It's clear from the PPGPV stats that McCarthy at £4.7m has been quite a bargain. Reece James ranks high at fourth best amongst my team and would definitely be an improvement over some of my defenders such as George Baldock who is in the same price band at £5m.
 
-I hope this has been a helpful introduction to FPLWrapper. If you have any feedback, please feel free to shoot me an email!
+I hope this has been a helpful introduction to FPLWrapper. If you have any feedback, please don't hesitate to comment!
