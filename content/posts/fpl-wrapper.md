@@ -49,6 +49,8 @@ We can see that this season James has been seriously competing with Trent. Those
 
 ## /my-team
 
+*Note: This endpoint is currently disabled due to FPL changing the way they authenticate.*
+
 The my-team endpoint allows you to get your current team and various relevant information about each player such as their next fixture.
 
 Using this endpoint in conjunction with the player endpoint you can graph how your current players have performed over the season in comparison with each other. I'm going to graph my players' points per game per value (PPGPV) to see if they've lived up to their price tags and include Reece James to see how he matches up against my defenders.
