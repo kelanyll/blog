@@ -4,7 +4,7 @@ title = "Yll Kelani"
 theme = "kiss"
 copyright = "&copy; <a href=\"https://github.com/kelanyll\">Yll Kelani</a>"
 disqusShortname = "kelanyll-com"
-googleAnalytics = ""
+googleAnalytics = "G-LVPCSV972B"
 Paginate = 5 # Number of posts per page
 enableRobotsTXT = false
 
