@@ -1,7 +1,6 @@
 ---
 title: "From a single machine to an encapsulated cloud architecture"
-date: 2022-09-18T00:00:00+01:00
-draft: true
+date: 2022-09-19T00:00:00+01:00
 tags: ["system-design", "aws"]
 ---
 Until now this blog and the FPLWrapper service had been hosted on the same EC2 instance. This included Nginx to sit in front of them as a proxy:
