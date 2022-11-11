@@ -34,5 +34,6 @@
 <link rel="canonical" href="{{ .Permalink }}">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
+{{ if .Params.math }}{{ partial "katex.html" . }}{{ end }}
 </head>
 <body>
