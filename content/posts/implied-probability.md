@@ -27,12 +27,12 @@ Now what seems to be missing from most resources is an explanation for how impli
 
 This formula represents how much profit you would be expected to get on average by offering odds on a single outcome of an event, where $W$ is the sum of all wagers and $P(O)$ is the true probability of that outcome occurring.
 
-$$
+\\[
 \begin{aligned}
 E[Profit] &= E[Wagers] - E[Payouts] \\\\\\
 &= W - P(O) \cdot W \cdot d
 \end{aligned}
-$$
+\\]
 
 To convince you of this:
 - Our expected profit will naturally be the amount of money we receive subtracted by the amount of money we pay out.
