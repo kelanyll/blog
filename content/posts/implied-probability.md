@@ -2,6 +2,7 @@
 title: "The intuition behind odds-implied probability"
 date: 2022-11-11T00:00:00+00:00
 tags: ["probability", "sports-betting"]
+hidden: true
 ---
 If you start looking at the maths behind betting you may come across the idea of implied probability. This is where you use the odds offered on an event to calculate an implied probability of different outcomes. For the sake of simplicity I'm going to use decimal odds in this post. 
 
