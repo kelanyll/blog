@@ -1,13 +1,12 @@
 ---
 title: "How can a bookmaker use probability theory to make a profit?"
-date: 2022-11-15T00:00:00+00:00
+date: 2022-11-16T18:00:00+00:00
 tags: ["probability", "sports-betting"]
-hidden: true
 ---
 
-When looking at sports betting from a mathematical perspective, one interesting question is how do bookmakers decide the odds they're going to offer for any one event? And do they incorporate probability theory? Any scrap of knowledge can be useful in finding an edge as a bettor and this is no exception. I'm going to run through a simple approach to setting odds with an appreciation for the stochastic nature of sports.
+When looking at sports betting from a mathematical perspective, one interesting question is how do bookmakers decide the odds they're going to offer for any one event? And do they incorporate probability theory? I'm going to run through a simple approach to setting odds with an appreciation for the stochastic nature of sports.
 
-Disclaimer - this content isn't backed by any real experience of what goes on behind the scenes at bookmakers. It is an attempt at a sensible approach to do this, backed by probability theory. 
+Disclaimer - this content isn't backed by any real experience of what goes on behind the scenes at bookmakers. It is an attempt at a sensible approach to do this using probability theory. 
 
 And for the purpose of simplicity, I'm going to use decimal odds.
 
@@ -15,7 +14,7 @@ And for the purpose of simplicity, I'm going to use decimal odds.
 > With decimal odds of $2$, for every £1 you wager you receive a full payout of £2. To convert fractional odds to decimal odds, you convert the fraction to decimal and add 1 e.g. fractional odds of $7/2$ are $4.5$ as decimal odds: 
 > $$7/2 + 1 = 3.5 + 1 = 4.5$$
 
-Our assumption is that a bookmaker's drive is to set odds that will make them a profit. Profit in this space is random so we can represent this as a random variable[^1] and compute its expected value[^2].
+Our assumption is that a bookmaker's goals is to set odds that will make them a profit. Profit in this space is random so we can represent this as a random variable[^1] and compute its expected value[^2].
 \\[
 \begin{aligned}
 E[Profit] &= E[Wagers] - E[Payouts] \\\\\\
@@ -45,7 +44,7 @@ d &= (1 - 0.05)/0.2 \\\\\\
 d &= 4.75 \\\\\\
 \end{aligned}
 $$
-You can see now our odds are lower - it makes sense right? If we want to make more of a profit we reduce the amount we pay out. Another way of looking at this is using the concept of implied probability.
+You can see now our odds are lower - it makes sense right? If we want to make more of a profit we reduce the amount we pay out. We can look at this another way using the concept of implied probability.
 
 > Implied probability $p_{imp}$ is the probability of an outcome implied by odds offered on that outcome.
 > $$p_{imp} = 1/d$$ 
