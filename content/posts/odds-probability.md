@@ -1,12 +1,12 @@
 ---
-title: "How can a bookmaker use probability theory to make a profit?"
+title: "Calculating odds with probability theory in order to make a profit"
 date: 2022-11-16T18:00:00+00:00
 tags: ["probability", "sports-betting"]
 ---
 
-When looking at sports betting from a mathematical perspective, one interesting question is how do bookmakers decide the odds they're going to offer for any one event? And do they incorporate probability theory? I'm going to run through a simple approach to setting odds with an appreciation for the stochastic nature of sports.
+When looking at sports betting from a mathematical perspective, one interesting question is where does probability theory come in when calculating odds? And can it help a bookmaker increase their chances of making a profit? I'm going to run through a simple approach to setting odds with an appreciation for the stochastic nature of sports.
 
-Disclaimer - this content isn't backed by any real experience of what goes on behind the scenes at bookmakers. It is an attempt at a sensible approach to do this using probability theory. 
+Disclaimer - this content isn't backed by any real experience of what goes on behind the scenes at bookmakers. It is an attempt at a sensible approach to do calculate odds using probability theory. 
 
 And for the purpose of simplicity, I'm going to use decimal odds.
 
@@ -14,7 +14,7 @@ And for the purpose of simplicity, I'm going to use decimal odds.
 > With decimal odds of $2$, for every £1 you wager you receive a full payout of £2. To convert fractional odds to decimal odds, you convert the fraction to decimal and add 1 e.g. fractional odds of $7/2$ are $4.5$ as decimal odds: 
 > $$7/2 + 1 = 3.5 + 1 = 4.5$$
 
-Our assumption is that a bookmaker's goals is to set odds that will make them a profit. Profit in this space is random so we can represent this as a random variable[^1] and compute its expected value[^2].
+Our goal is to choose odds that will make us a profit. Profit in this space is random so we can represent this as a random variable[^1] and compute its expected value[^2].
 \\[
 \begin{aligned}
 E[Profit] &= E[Wagers] - E[Payouts] \\\\\\
@@ -26,7 +26,7 @@ To convince you of this formula:
 - Our expected wagers (or the amount of money we receive) will always be the sum of the wagers.
 - If the outcome does occur we expect to payout our odds multiplied by the sum of the wagers we receive and this will occur with probability $P(O)$.
 
-Lets say that we're a bookmaker offering odds on Liverpool beating Man City and we believe that this has a 20% likelihood of occurring so $P(O) = 0.2$. As an experiment, we want to compute the odds that will have us break even on average:
+Lets say that we're offering odds on Liverpool beating Man City and we believe that this has a 20% likelihood of occurring so $P(O) = 0.2$. As an experiment, we want to compute the odds that will have us break even on average:
 $$
 \begin{aligned}
 0 &= W - 0.2 \cdot W \cdot d \\\\\\
@@ -62,9 +62,9 @@ $$
 
 We can see that when we want to break even on average, our implied probability is equal to the true probability. We can also infer that the larger the implied probability, the more positive the expected profit. The difference between these values is called the overround[^3] and here we've proved that we can break down the implied probability into the true probability and the overround (the bookmaker's profit margin).
 
-To summarise, a bookmaker can work backwards from the profit they want to achieve using probability theory to decide on appropriate odds. This approach also shows where the overround comes from in implied probability.
+To summarise, when setting odds on an event, we can work backwards from the profit we want to achieve using probability theory. This approach also shows where the overround comes from in implied probability.
 
-There's a lot more that goes into setting odds including optimising the number of wagers made on multiple outcomes of an event. It's also interesting to think about how we can use the concept of implied probability to build a mathematical strategy towards betting (hint: this can include removing the overround). Hope to do a deeper dive in a future post!
+There's undoubtedly a lot that goes into setting odds as a bookmaker but I believe this is one of the fundamental ideas. It's also interesting to think about how we can use the concept of implied probability to build a mathematical strategy towards betting (hint: this can include removing the overround). Hope to do a deeper dive in a future post!
 
 [^1]: http://www.stat.yale.edu/Courses/1997-98/101/ranvar.htm
 [^2]: https://www.probabilitycourse.com/chapter3/3_2_2_expectation.php
