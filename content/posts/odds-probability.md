@@ -62,7 +62,7 @@ $$
 
 We can see that when we want to break even on average, our implied probability is equal to the true probability. We can also infer that the larger the implied probability, the more positive the expected profit. The difference between these values is called the overround[^3] and here we've proved that we can break down the implied probability into the true probability and the overround (the bookmaker's profit margin).
 
-To summarise, when setting odds on an event, we can work backwards from the profit we want to achieve using probability theory. This approach also shows where the overround comes from in implied probability.
+To summarise, when setting odds on an event, we can work backwards from the profit we want to achieve using probability theory. This approach shows where the overround comes from in implied probability.
 
 There's undoubtedly a lot that goes into setting odds as a bookmaker but I believe this is one of the fundamental ideas. It's also interesting to think about how we can use the concept of implied probability to build a mathematical strategy towards betting (hint: this can include removing the overround). Hope to do a deeper dive in a future post!
 
