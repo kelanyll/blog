@@ -1,5 +1,5 @@
 ---
-title: "Calculating odds with probability theory in order to make a profit"
+title: "Calculating odds with probability theory"
 date: 2022-11-16T18:00:00+00:00
 tags: ["probability", "sports-betting"]
 ---
