@@ -6,7 +6,7 @@ tags: ["probability", "sports-betting"]
 
 When looking at sports betting from a mathematical perspective, one interesting question is where does probability theory come in when calculating odds? And can it help a bookmaker increase their chances of making a profit? I'm going to run through a simple approach to setting odds with an appreciation for the stochastic nature of sports.
 
-Disclaimer - this content isn't backed by any real experience of what goes on behind the scenes at bookmakers. It is an attempt at a sensible approach to do calculate odds using probability theory. 
+This content isn't backed by any real experience of what goes on behind the scenes at bookmakers but it's an attempt at a sensible approach to calculating odds using probability theory. 
 
 And for the purpose of simplicity, I'm going to use decimal odds.
 
