@@ -1,6 +1,7 @@
 ---
 title: "How to integrate an external library that doesn't support CMake"
 date: 2023-04-16T10:57:25+01:00
+tags: ["cmake","c++"]
 ---
 
 If you're trying to integrate an external library into your project, most of the time you should be able to make use of CMake's `FetchContent`. Although, if the external library isn't compatible with CMake that won't work. Here are two alternative methods for doing this:
