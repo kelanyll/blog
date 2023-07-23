@@ -5,7 +5,7 @@ theme = "kiss"
 copyright = "&copy; <a href=\"https://github.com/kelanyll\">Yll Kelani</a>"
 disqusShortname = "kelanyll-com"
 googleAnalytics = "G-LVPCSV972B"
-Paginate = 5 # Number of posts per page
+Paginate = 50 # Number of posts per page
 enableRobotsTXT = false
 
 [params.rss] # Adding this tag enables RSS feed
@@ -22,12 +22,11 @@ enableSocial = true # Adds OpenGraph and Twitter cards
 homeTitle = "" # Title for home page
 poweredby = false # Adds powered by hugo and kiss below Copyright
 related = false # Includes related articles at the bottom of the article
-codeCopy = true # Add copy button above code blocks
+codeCopy = false # Add copy button above code blocks
 taxonomiesCount = true # Add taxonomies count
 
 [params.features]
 disqusOnDemand = false  # Load Disqus comments on click
-
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
