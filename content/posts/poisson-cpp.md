@@ -3,18 +3,18 @@ title: "Predicting goals scored with Poisson regression in C++"
 date: 2023-07-20T20:13:22+01:00
 ---
 
-I've been interested in the application of statistical learning to football and how the professionals use it in sports betting. I've also wanted to get some practice in with C++ and this project is the stone killing both birds.
+I've been interested in the application of statistical learning to football and how the professionals use it in sports betting. I've also wanted to get some practice in with C++ and this project kills both birds.
 
 The project is available on GitHub: https://github.com/kelanyll/poisson.
 
-The classic method that beginners are pointed to uses Poisson regression to predict goals scored by both teams in a football match. 
+The classic method that beginners are directed to uses Poisson regression to predict goals scored by both teams in a football match. 
 
-Libraries for this exist out of the box for most languages known for data analysis like Python and R. It was a nightmare to find anything that works out of the box for C++.
+Libraries for this exist out of the box for most languages known for data analysis like Python and R. It was difficult to find anything that works out of the box for C++.
 
 You should have a really good reason to use C++ for something like this. And even if you do, you're probably better off using something like [pybind11](https://github.com/pybind/pybind11). If you're committed then I hope this post helps you out.
 
 #### Dependencies
-I found the [BOOM](https://github.com/steve-the-bayesian/BOOM) project that has support for Poisson regression. It seems to be intended to be used via an R interface but it's written in C++. It looks to have been used by Google and still maintained which can't hurt. It's built using Bazel so was a pain to integrate with CMake (wrote another [post](https://www.kelanyll.com/posts/cmake-bazel/) about this) but I managed to get it working with [ExternalProject](https://cmake.org/cmake/help/latest/module/ExternalProject.html).
+I found the [BOOM](https://github.com/steve-the-bayesian/BOOM) project that has support for Poisson regression. It is intended to be used via an R interface but it's written in C++. It looks to have been used by Google and still maintained which can't hurt. It's built using Bazel so wasn't super easy to integrate with CMake (wrote another [post](https://www.kelanyll.com/posts/cmake-bazel/) about this) but I managed to get it working with [ExternalProject](https://cmake.org/cmake/help/latest/module/ExternalProject.html).
 
 I'm using [DataFrame](https://github.com/hosseinmoein/DataFrame) which is a pandas-like library for manipulating 2D data. 
 
